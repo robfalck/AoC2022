@@ -1,3 +1,4 @@
+
 test_data = """1000
 2000
 3000
@@ -42,7 +43,7 @@ def solve(input):
     for i, calories in enumerate(calorie_totals):
         if calories > max_cals:
             max_cals = calories
-            max_elf = i+1
+            max_elf = i + 1
 
     print('Part 1:')
     print(max_elf, max_cals)
@@ -59,5 +60,4 @@ if __name__ == '__main__':
     print('--- SOLUTION ---')
     with open('day1.in') as f:
         input = f.readlines()
-
-    
+    solve(input)
