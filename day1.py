@@ -49,6 +49,9 @@ def solve(input):
     print(max_elf, max_cals)
 
     # For part 2, well just sort the list of calorie_totals, and sum the last 3 elements
+    # We could have just sorted the list and taken the last value for part 1, but the 
+    # for loop above is just shown as a demonstration and is more typical of how you'd
+    # do it in some languages.
     print('Part 2:')
     print(sum(sorted(calorie_totals)[-3:]))
 
